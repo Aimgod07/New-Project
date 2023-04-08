@@ -23,12 +23,32 @@
 Freelancers handle contract work on a part-time or full-time basis and often sign agreements before starting projects.
 
 With freelancing, the client pays per project, per task, or per hour, depending on the agreement. Freelance projects typically involve short-term assignments, although satisfied clients often request follow-on work. Most freelance jobs are available in the skills, service, and creative sectors, such as copywriting, programming, engineering, and marketing.</p></div>
-    <h3 align="center">Job apportunities
+    <h3 align="center">Jobs
     </h3>
+      {% for job in Jobs %}
+     {% include 'jobitem.html'%}
+      {% endfor %}
     <h3 align="center">
-      Seeking for Learning
+    <b><font color=" black">  Seeking for Learning</font></b>
     </h3>
-    <div><button1 type="button" class="btn btn-outline-primary" disabled>Contact Us</button></div>
-    <button2 type="button" class="btn  btn-outline-primary" disabled>More About Us</button>
+    <div class= "row">
+      <div class ="col-10">
+      <div>  <img src="static/Learning.jpg" style="float:left" height="250" width="220"></div>
+      <div class="mt-3 border-bottom row" style ="margin-bottom:16px; padding-bottom: 8px;">
+        <p class="mt-2 container text-center">One of the advantages of being a freelancer is that you have much more freedom than when you work for someone else. You're essentially running your own business, and it's up to you which new clients you take on, what your hourly rate is, and what hours you work.</p></div>
+        <p class="text-center">They include communication skills, working with and relating to others, problem-solving, applying initiative and IT skills. Having a good sense of humour and being a great person to work with goes a long way too. Your other skills are all the other skills, knowledge and hobbies you have.
+      </p>
+      </div>
+      
+      <div class ="col-2 mt-4"><a href="https://www.freecodecamp.org/"> Free Courses</a>
+         <div class="col">
+      <div class="p-3 mt-5"><a href="https://www.upwork.com/resources/what-is-freelancing">More About Free Lancing</a></div>
+         </div> 
+      </div>
+    </div>
+     
+    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+    <button type="button" class="btn btn-outline-primary">Contact Us</button></div>
+    <div class="d-grid gap-2 d-md-block"><button type="button" class="btn btn-outline-primary ">More About Us</button></div>
   </body>
 </html>

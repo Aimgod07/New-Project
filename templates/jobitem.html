@@ -1,0 +1,11 @@
+ <div class="mt-3 border-bottom row" style ="margin-bottom:16px; padding-bottom: 8px;">
+   <div class="col-9">{{job['title']}} 
+         <b><div class="mt-1 ">{{job['location']}}
+         </div></b>
+        {%if 'salary in job'%}
+        <b>Salary :</b>
+         {{job['Salary']}}
+   </div>      
+      <div class="col-3"><button type="input" class="btn btn-primary" value="input">Apply</button></div>
+        {% endif %}
+ </div>
