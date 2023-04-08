@@ -1,28 +1,39 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <style> 
-    </style>
-     <meta charset="utf-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    {% include 'icon.html'%}
+    <style>
+      #okay{margin:0 auto 0 auto;}
+    </style>
   </head>
     <title>
-      First Project
+      FREE LANCING
     </title>
   </head>
-  <body>
-    <div class="container">
-    <h1 class="text-center mt-4 mb-4">FREE LANCING TUTORIALS </h1>
+  <body> 
+   <p><div id="okay"><div class="container">
+      <div class="d-flex p-2 ">
+    <img src="static/logo.png" height="200" width="240" style='float:left'>
+    <h1  class="text-center mt-4 mb-0 ms-5 me-5"><br>
+    FREE LANCING 
+    </h1><div class="mt-5 ms-5">
+        <br><button type="button" class="btn">India</button>
+        <button type="button" class="btn">USA</button>
+        <button type="button" class="btn">EUROPE</button>
+      <button type="button" class="btn">OTHER</button>
+        <button type="button" class="btn btn-danger ms-2">Login</button>
+      
+    </div>
+    </div>
+      {%include 'Navbar.html'%}
     <center><img id="banner" src=https://new-project-3.aimgod07.repl.co/static/dj.jpg
       height="450"width="1000" ></center>
    <h2 align ="center">ABOUT FREE LANCING
    </h2>
-    <div> <p>Freelancing is doing specific work for clients without committing to full-time employment. Freelancers often take on multiple projects with different clients simultaneously. The Internal Revenue Service (IRS) considers freelancers to be self-employed individuals
-
-Freelancers handle contract work on a part-time or full-time basis and often sign agreements before starting projects.
-
-With freelancing, the client pays per project, per task, or per hour, depending on the agreement. Freelance projects typically involve short-term assignments, although satisfied clients often request follow-on work. Most freelance jobs are available in the skills, service, and creative sectors, such as copywriting, programming, engineering, and marketing.</p></div>
+    {%include 'paragraph1.html'%}
     <h3 align="center">Jobs
     </h3>
       {% for job in Jobs %}
@@ -35,9 +46,7 @@ With freelancing, the client pays per project, per task, or per hour, depending 
       <div class ="col-10">
       <div>  <img src="static/Learning.jpg" style="float:left" height="250" width="220"></div>
       <div class="mt-3 border-bottom row" style ="margin-bottom:16px; padding-bottom: 8px;">
-        <p class="mt-2 container text-center">One of the advantages of being a freelancer is that you have much more freedom than when you work for someone else. You're essentially running your own business, and it's up to you which new clients you take on, what your hourly rate is, and what hours you work.</p></div>
-        <p class="text-center">They include communication skills, working with and relating to others, problem-solving, applying initiative and IT skills. Having a good sense of humour and being a great person to work with goes a long way too. Your other skills are all the other skills, knowledge and hobbies you have.
-      </p>
+      {%include 'paragraph2.html'%}
       </div>
       
       <div class ="col-2 mt-4"><a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="https://www.freecodecamp.org/"> Free Courses</a>
@@ -51,6 +60,7 @@ With freelancing, the client pays per project, per task, or per hour, depending 
     </div>
     <div class="d-grid gap-2 d-md-block"><button type="button" style ="float:left" class="btn btn-outline-primary ">More About Us</button></div>
      <div class="mx-auto p-2" style="width: 170px;"> Copyright 2023, IGN</div>
-     </div>
+  </div>
+    </div></p>
      </body>
 </html>
